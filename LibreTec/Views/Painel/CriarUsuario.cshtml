@@ -1,0 +1,16 @@
+﻿@model UsuarioModel
+@{
+}
+
+<form asp-controller="Usuario" asp-action="PostUsuario" method="post" style="width:100%;height:100%">
+
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px">
+
+            <input asp-for="Nome" type="text" placeholder="Nome" />
+            <input asp-for="Login" type="text" placeholder="Login" />
+            <input asp-for="Email" type="text" placeholder="Email" />
+            <input asp-for="Senha" type="text" placeholder="Senha" />
+            <button type="submit" style="width:200px;height:60px;border: 0 none;background-color: #005C6D;color: #fff;font-size:24px;font-weight:700;border-radius:20px">Confirmar</button>
+
+    </div>
+</form>

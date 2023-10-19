@@ -1,0 +1,125 @@
+﻿@model LivroModel
+@{
+}
+
+
+<form asp-controller="Livro" asp-action="AtualizarLivro" method="post" style="width:100%;height:100%">
+
+
+    <div style="width:100%;height:100%;padding:20px;display:flex;align-items:center;justify-content:flex-start;flex-direction:column;flex-wrap:wrap">
+
+        <input type="hidden" asp-for="Id" />
+
+        <input type="hidden" asp-for="Emprestado.Data_Retirada" />
+
+        <input type="hidden" asp-for="Emprestado.Data_Devolucao" />
+
+        <input type="hidden" asp-for="Emprestado.Nome" />
+
+        <input type="hidden" asp-for="Emprestado.RA" />
+
+        <input type="hidden" asp-for="Emprestado.Multa" />
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Tombo Atual:</label>
+            <input asp-for="Tombo_Atual" type="text" placeholder="Tombo_Atual" style="width: 400px; height:60px" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Tombo Antigo:</label>
+            <input asp-for="Tombo_Antigo" type="text" placeholder="Tombo_Antigo" style="width: 400px; height:60px"  />
+        </div>
+
+
+        <div style ="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Autor:</label>
+            <input asp-for="Autor" type="text" style="width: 400px; height:60px" placeholder="Nome do Autor" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Titulo:</label>
+            <input asp-for="Titulo" type="text" style="width: 400px; height:60px" placeholder="Titulo do Livro" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Local Emissao:</label>
+            <input asp-for="Local" type="text" style="width: 400px; height:60px" placeholder="Local de Emissao" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Ano Emissão:</label>
+            <input asp-for="Ano" type="text" style="width: 400px; height:60px" placeholder="Ano Emissão" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Data:</label>
+            <input asp-for="Data" type="text" style="width: 400px; height:60px" placeholder="Data" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Cod Classe:</label>
+            <input asp-for="Cod_Classe" type="text" style="width: 400px; height:60px" placeholder="Código de Classe" />
+        </div>
+
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Cod Barras:</label>
+            <input asp-for="Cod_Barra" type="text" style="width: 400px; height:60px" placeholder="Código de Barras" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Arquivo:</label>
+            <input asp-for="Arquivo" type="text" style="width: 400px; height:60px" placeholder="Arquivo" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Clutter:</label>
+            <input asp-for="Clutter" type="text" style="width: 400px; height:60px" placeholder="Clutter" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Editora:</label>
+            <input asp-for="Editora" type="text" style="width: 400px; height:60px" placeholder="Editora" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Gênero:</label>
+            <input asp-for="Genero" type="text" style="width: 400px; height:60px" placeholder="Gênero" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Palavras Chaves:</label>
+            <input asp-for="Palavra_Chave" type="text" style="width: 400px; height:60px" placeholder="Palavras Chaves" />
+        </div>
+
+        <div style="display:flex;flex-direction:column;text-align:center">
+            <label style="font-size:24px;color:#005C6D;font-weight:700">Doador:</label>
+            <input asp-for="Nome_Doador" type="text" style="width: 400px; height:60px" placeholder="Doador" />
+        </div>
+
+
+        <section style="display:flex;flex-direction:row">
+            <div class="form-check form-check-inline" style="display:flex;flex-direction:row;gap:10px;align-items:center">
+                <input class="form-check-input" type="radio" name="TipoAquisicao" id="Doacao" value="Doacao" style="width:20px;height:20px">
+                <label class="form-check-label" for="inlineRadio1" style="font-weight:700;font-size:20px">Doação</label>
+            </div>
+            <div class="form-check form-check-inline" style="display:flex;flex-direction:row;gap:10px;align-items:center">
+                <input class="form-check-input" type="radio" name="TipoAquisicao" id="FNDE" value="FNDE" style="width:20px;height:20px">
+                <label class="form-check-label" for="inlineRadio2" style="font-weight:700;font-size:20px">FNDE</label>
+            </div>
+            <div class="form-check form-check-inline" style="display:flex;flex-direction:row;gap:10px;align-items:center">
+                <input class="form-check-input" type="radio" name="TipoAquisicao" id="Compra" value="Compra" style="width:20px;height:20px">
+                <label class="form-check-label" for="inlineRadio2" style="font-weight:700;font-size:20px">Compra</label>
+            </div>
+        </section>
+
+    </div>
+
+    <div style="position: absolute;right:50px;bottom:10%;width:125px;height:90px;background-color: #DADADA;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;border-radius:20px;display:flex;flex-direction:row;align-items:center;justify-content:space-around">
+
+        <button type="submit" class="Botao-Atualizar" style="width:75px; height:75px;background-color:#fff;border-radius:20px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+        </button>
+
+    </div>
+
+</form>

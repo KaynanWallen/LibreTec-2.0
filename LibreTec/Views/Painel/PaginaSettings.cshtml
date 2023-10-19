@@ -1,0 +1,45 @@
+﻿@model List<UsuarioModel>
+@{
+}
+
+<div style="width:100%;height:100%;display:flex;justify-content:center;align-items:start;overflow-y:scroll">
+    <section class="text-center" style="width:90%;margin-top:20px">
+        <table class="table" id="table-biblioteca">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Login</th>
+                    <th scope="col" class="text-center">Nome</th>
+                    <th scope="col" class="text-center">Email</th>
+                    <th scope="col" class="text-center">Senha</th>
+                    <th scope="col" class="text-center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (UsuarioModel usuario in Model)
+                    {
+                        <tr>
+                            <th scope="row">@usuario.Login</th>
+                            <td>@usuario.Nome</td>
+                            <td>@usuario.Email</td>
+                            <td>@usuario.Senha</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a role="button" class="btn btn-success">Editar</a>
+                                    <a asp-controller="Usuario" asp-route-id="@usuario.Id" asp-action="ApagarUsuario" role="button" class="btn btn-danger">Apagar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </section>
+
+    <section style="position: absolute;right:50px;bottom:10%;width:125px;height:90px;background-color: #DADADA;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;border-radius:20px;display:flex;flex-direction:row;align-items:center;justify-content:space-around">
+        <a asp-controller="Painel" asp-action="CriarUsuario" class="Botao-Adicionar" style="width:75px; height:75px;background-color:#fff;border-radius:20px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);outline: 0;border: 0 none">
+        </a>
+    </section>
+</div>
+

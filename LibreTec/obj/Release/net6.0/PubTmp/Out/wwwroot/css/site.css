@@ -1,0 +1,132 @@
+.BackgroundImage {
+    background-image: url("../img/background.jpg");
+}
+
+.Logo {
+    background-image: url("../img/logomini.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.Logos {
+    background-image: url("../img/logos.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.LogoCK {
+    background-image: url("../img/logock.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.Locked {
+    background-image: url("../img/locked.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.Logo-Etec {
+    background-image: url("../img/etec.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.Logo-Settings {
+    background-image: url("../img/settings.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Icone-User {
+    background-image: url("../img/userbook.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.Icone-Livro {
+    background-image: url("../img/iconsbook.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.Icone-Collumn {
+    background-image: url("../img/iconscollumn.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Botao-Adicionar {
+    background-image: url("../img/botaoadicionar.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Botao-Atualizar {
+    background-image: url("../img/botaoatualizar.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Botao-Download {
+    background-image: url("../img/botaodowload.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Botao-Sair {
+    background-image: url("../img/botaosair.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Botao-Editar {
+    background-image: url("../img/botaoeditar.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Icon-Emprestar {
+    background-image: url("../img/iconemprestar.png");
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.Botao-Devolver {
+    background-image: url("../img/botaodevolver.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Botao-Pesquisa {
+    background-image: url("../img/botaopesquisa.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.CardDevolver {
+    width: 550px;
+    min-height: 150px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.close-alert {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+

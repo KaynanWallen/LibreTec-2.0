@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LibreTec
+build_property.RootNamespace = LibreTec
+build_property.ProjectDir = C:\Users\walle\OneDrive\Documentos\Projetos\LibreTec\LibreTec\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\walle\OneDrive\Documentos\Projetos\LibreTec\LibreTec
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/CriarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXENyaWFyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaBiblioteca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYUJpYmxpb3RlY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaDevolver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYURldm9sdmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaEditar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYUVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaEmprestar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYUVtcHJlc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaIncluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYUluY2x1aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaRemover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYVJlbW92ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Painel/PaginaSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpbmVsXFBhZ2luYVNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Shared/CardDevolver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhcmREZXZvbHZlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uxj8lqzvto
+
+[C:/Users/walle/OneDrive/Documentos/Projetos/LibreTec/LibreTec/Views/Shared/_LayoutDeslogado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZXNsb2dhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-inn49z6ev5

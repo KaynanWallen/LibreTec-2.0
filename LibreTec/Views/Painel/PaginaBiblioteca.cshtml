@@ -1,0 +1,44 @@
+﻿@model List<LivroModel>
+@{
+}
+
+<div style="width:100%;height:100%;display:flex;justify-content:center;align-items:start;overflow-y:scroll">
+    <section class="text-center" style="width:90%;margin-top:20px">
+        <table class="table" id="table-biblioteca">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Tombo Atual</th>
+                    <th scope="col" class="text-center">Titulo</th>
+                    <th scope="col" class="text-center">Autor</th>
+                    <th scope="col" class="text-center">Genero</th>
+                    <th scope="col" class="text-center">Clutter</th>
+                    <th scope="col" class="text-center">Arquivo</th>
+                    <th scope="col" class="text-center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (LivroModel livro in Model)
+                    {
+                        <tr>
+                            <th scope="row">@livro.Tombo_Atual</th>
+                            <td>@livro.Titulo</td>
+                            <td>@livro.Autor</td>
+                            <td>@livro.Genero</td>
+                            <td>@livro.Clutter</td>
+                            <td>@livro.Arquivo</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a asp-controller="Painel" asp-route-id="@livro.Id" asp-action="PaginaEditar" role="button" class="btn btn-success">Editar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </section>
+</div>
+
+                                

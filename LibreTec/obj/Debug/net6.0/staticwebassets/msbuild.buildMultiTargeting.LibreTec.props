@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LibreTec.props" />
+</Project>

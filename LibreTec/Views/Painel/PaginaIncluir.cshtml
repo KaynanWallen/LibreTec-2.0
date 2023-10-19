@@ -1,0 +1,84 @@
+﻿@model LivroModel
+
+@{
+    ViewData["Title"] = "Pagina Incluir";
+}
+
+
+<form asp-controller="Livro" asp-action="PostLivro" method="post" style="width:100%;height:100%">
+
+        @if (TempData["MensagemSucesso"] != null)
+        {        
+            <div class="alert alert-success" role="alert" style="position:absolute;right:20px;margin-top:20px">
+                <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+                <span> @TempData["MensagemSucesso"]</span>
+            </div>
+        }
+        @if (TempData["MensagemErro"] != null)
+        {
+            <div class="alert alert-danger" role="alert" style="position:absolute;right:20px;margin-top:20px">
+                <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+                <span> @TempData["MensagemErro"]</span>
+            </div>
+        }
+
+
+    <div style="width:100%;height:100%;gap:20px; padding:20px;display:flex;align-items:center;justify-content:center;flex-direction:column;flex-wrap:wrap">
+
+
+
+        <input type="hidden" asp-for="Emprestado.Data_Retirada" value="Data"/>
+        <div style="width:400px;height:60px;display:flex;flex-direction:row;background-color:#fff;border-radius:10px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset">
+            <input asp-for="Tombo_Atual" type="text" placeholder="Tombo_Atual" style="width: 340px; height:60px;background-color:transparent;border-radius:10px;box-shadow: none" />
+            <div class="Botao-Pesquisa" style="width:60px;height:60px;background-color:#005C6D;border-radius:10px">
+            </div>
+        </div>
+
+        <div style="width:400px;height:60px;display:flex;flex-direction:row;background-color:#fff;border-radius:10px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset">
+            <input asp-for="Tombo_Antigo" type="text" placeholder="Tombo_Antigo" style="width: 340px; height:60px;background-color:transparent;border-radius:10px;box-shadow: none" />
+            <div class="Botao-Pesquisa" style="width:60px;height:60px;background-color:#005C6D;border-radius:10px">
+            </div>
+        </div>
+        
+
+        <input asp-for="Autor" type="text" style="width: 400px; height:60px" placeholder="Nome do Autor" />
+        <input asp-for="Titulo" type="text" style="width: 400px; height:60px" placeholder="Titulo do Livro" />
+        <input asp-for="Local" type="text" style="width: 400px; height:60px" placeholder="Local de Emissao" />
+        <input asp-for="Ano" type="text" style="width: 400px; height:60px" placeholder="Ano Emissão" />
+        <input asp-for="Data" type="text" style="width: 400px; height:60px" placeholder="Data" />
+        <input asp-for="Cod_Classe" type="text" style="width: 400px; height:60px" placeholder="Código de Classe" />
+
+
+
+        <input asp-for="Cod_Barra" type="text" style="width: 400px; height:60px" placeholder="Código de Barras" />
+        <input asp-for="Arquivo" type="text" style="width: 400px; height:60px" placeholder="Arquivo" />
+        <input asp-for="Clutter" type="text" style="width: 400px; height:60px" placeholder="Clutter" />
+        <input asp-for="Editora" type="text" style="width: 400px; height:60px" placeholder="Editora" />
+        <input asp-for="Genero" type="text" style="width: 400px; height:60px" placeholder="Gênero" />
+        <input asp-for="Palavra_Chave" type="text" style="width: 400px; height:60px" placeholder="Palavras Chaves" />
+        <input asp-for="Nome_Doador" type="text" style="width: 400px; height:60px" placeholder="Doador" />
+
+
+        <section style="display:flex;flex-direction:row">
+            <div class="form-check form-check-inline" style="display:flex;flex-direction:row;gap:10px;align-items:center">
+                <input class="form-check-input" type="radio" name="TipoAquisicao" id="Doacao" value="Doacao" style="width:20px;height:20px">
+                <label class="form-check-label" for="inlineRadio1" style="font-weight:700;font-size:20px">Doação</label>
+            </div>
+            <div class="form-check form-check-inline" style="display:flex;flex-direction:row;gap:10px;align-items:center">
+                <input class="form-check-input" type="radio" name="TipoAquisicao" id="FNDE" value="FNDE" style="width:20px;height:20px">
+                <label class="form-check-label" for="inlineRadio2" style="font-weight:700;font-size:20px">FNDE</label>
+            </div>
+            <div class="form-check form-check-inline" style="display:flex;flex-direction:row;gap:10px;align-items:center">
+                <input class="form-check-input" type="radio" name="TipoAquisicao" id="Compra" value="Compra" style="width:20px;height:20px">
+                <label class="form-check-label" for="inlineRadio2" style="font-weight:700;font-size:20px">Compra</label>
+            </div>
+        </section>
+
+    </div>
+    <div style="position: absolute;right:50px;bottom:10%;width:125px;height:90px;background-color: #DADADA;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;border-radius:20px;display:flex;flex-direction:row;align-items:center;justify-content:space-around">
+    
+        <button type="submit" class="Botao-Adicionar" style="width:75px; height:75px;background-color:#fff;border-radius:20px;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);outline: 0;border: 0 none">
+        </button>
+
+    </div>
+</form>
